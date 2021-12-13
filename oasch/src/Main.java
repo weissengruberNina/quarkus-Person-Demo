@@ -53,10 +53,8 @@ public class Main {
             if (curr != null) {
                 if (curr.getNext() != null) {
                     if (curr.getNext().getId() == id) {
-                        if (curr.getNext() != null) {
-                            curr.setNext(curr.getNext().getNext());
-                            hasChanged = true;
-                        }
+                        curr.setNext(curr.getNext().getNext());
+                        hasChanged = true;
                     }
 
                     if (curr.getNext() != null) {
